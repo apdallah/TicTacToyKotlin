@@ -20,18 +20,20 @@
 			android:gravity="center|end"
  			android:textColor="#fff"
 			android:background="#8B8989"
-			android:layout_weight="0.3"
+			android:layout_weight="0.4"
 			android:id="@+id/showNumbers"/>
 	<TableLayout
 			android:gravity="center|bottom"
 			android:layout_width="match_parent"
 			android:layout_height="0dp"
-			android:layout_weight="0.7"
+			android:layout_weight="0.6"
 			android:background="#D3D2D2"
 	>
 
 		<TableRow android:weightSum="1" android:gravity="center" android:layout_width="match_parent"
-		          android:layout_height="wrap_content">
+		          android:layout_height="0dp"
+		          android:padding="2dp"
+		android:layout_weight=".12">
 			<Button
 					android:text="AC"
 					android:layout_width="0dp"
@@ -69,7 +71,9 @@
 					android:layout_weight="0.25" android:layout_height="40pt" android:id="@+id/btnDiv"/>
 		</TableRow>
 		<TableRow android:weightSum="1" android:gravity="center" android:layout_width="match_parent"
-		          android:layout_height="match_parent">
+		          android:layout_height="0dp"
+		          android:layout_weight=".12"
+		          android:padding="2dp">
 			<Button
 					android:text="7"
 					android:textSize="20sp"
@@ -105,7 +109,9 @@
 					android:layout_weight="0.25" android:layout_height="40pt" android:id="@+id/btnMulti"/>
 		</TableRow>
 		<TableRow android:gravity="center" android:weightSum="1" android:layout_width="match_parent"
-		          android:layout_height="match_parent">
+		          android:layout_height="0dp"
+		          android:layout_weight=".12"
+		          android:padding="2dp">
 			<Button
 					android:text="4"
 					android:textSize="20sp"
@@ -142,7 +148,9 @@
 					android:layout_weight="0.25" android:layout_height="40pt" android:id="@+id/btnSub"/>
 		</TableRow>
 		<TableRow android:weightSum="1" android:gravity="center" android:layout_width="match_parent"
-		          android:layout_height="match_parent">
+		          android:layout_height="0dp"
+		          android:layout_weight=".12"
+		          android:padding="2dp">
 			<Button
 					android:text="1"
 					android:textSize="20sp"
@@ -180,8 +188,9 @@
 		</TableRow>
 		<TableRow
 				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:weightSum="1"
+				android:layout_height="0dp"
+				android:layout_weight=".12"	
+				android:padding="2dp" android:weightSum="1"
 				android:gravity="center">
 			<Button
 					android:text="0"
