@@ -1,10 +1,13 @@
 package com.example.myapplication
 
+import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import kotlinx.android.synthetic.main.activity_calculator.*
+import kotlin.math.log
 
 class CalculatorActivity : AppCompatActivity() {
     var isNewOp = false
@@ -12,7 +15,9 @@ class CalculatorActivity : AppCompatActivity() {
     var oldNumber=""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_calculator)
+        showNumbers.setHintTextColor(Color.BLACK)
     }
 
     fun numberBtnClick(view: View) {
@@ -86,6 +91,9 @@ class CalculatorActivity : AppCompatActivity() {
             btnSub.id -> {
                 op = "-"
             }
+            modl.id -> {
+                op = "%"
+            }
         }
         isNewOp=true
         oldNumber=showNumbers.text.toString()
@@ -110,6 +118,14 @@ class CalculatorActivity : AppCompatActivity() {
             }
             "-"->{
                 result=oldNumber.toDouble()-newNumber.toDouble()
+            }
+            "%"->{
+//                result=Math.IEEEremainder(oldNumber.toDouble(),newNumber.toDouble())
+                result=oldNumber.toDouble()-(Math.round(oldNumber.toDouble()/newNumber.toDouble())*newNumber.toDouble())
+                if(result<0) {
+                    result *= -1
+                }
+
             }
         }
         showNumbers.setText(result.toString())
