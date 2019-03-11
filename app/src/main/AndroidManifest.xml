@@ -9,10 +9,17 @@
 			android:roundIcon="@mipmap/ic_launcher_round"
 			android:supportsRtl="true"
 			android:theme="@style/AppTheme">
+		<activity android:name=".SignUpActivity">
+		</activity>
+		<activity android:name=".FirebaseSignInActivity">
+		</activity>
 		<activity
-				android:theme="@style/Theme.AppCompat.NoActionBar" android:name=".CalculatorActivity">
+				android:name=".CalculatorActivity"
+				android:theme="@style/Theme.AppCompat.NoActionBar">
 		</activity>
 		<activity android:name=".TicTacToy">
+		</activity>
+		<activity android:name=".TicTacToyOnline">
 		</activity>
 		<activity android:name=".MainActivity">
 			<intent-filter>

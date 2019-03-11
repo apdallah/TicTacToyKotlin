@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "811734845819",
+    "firebase_url": "https://kotlintictaconline.firebaseio.com",
+    "project_id": "kotlintictaconline",
+    "storage_bucket": "kotlintictaconline.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811734845819:android:13c3c6a65bcbec53",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811734845819-mun2qnhjtldcgdu21sqfiku9b20fshmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArjuCIf2VQrnFT0QHXhMNX24S0tQmiIvY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
